@@ -3,77 +3,138 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SB77 • Online Gaming</title>
+<title>SB77 — Online Gaming</title>
 
 <style>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #0d0f1a;
-  color: #fff;
-}
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: #0c0f14;
+        color: white;
+    }
 
-.header {
-  background: #111526;
-  padding: 18px;
-  text-align: center;
-  font-size: 24px;
-  font-weight: bold;
-  color: #00ff84;
-}
+    /* Header */
+    .header {
+        background: #1a1f26;
+        padding: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo {
+        font-size: 26px;
+        font-weight: bold;
+        color: #36ff74;
+    }
+    .menu a {
+        color: white;
+        margin-left: 15px;
+        text-decoration: none;
+        font-size: 15px;
+    }
 
-.btn-box {
-  margin-top: 40px;
-  text-align: center;
-}
+    /* Banner */
+    .banner {
+        background: url('https://i.ibb.co/4N1Mfjc/casino-banner.jpg') no-repeat center;
+        background-size: cover;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 28px;
+        font-weight: bold;
+        text-shadow: 2px 2px 10px black;
+    }
 
-.btn {
-  background: #00ff84;
-  padding: 14px 26px;
-  font-size: 20px;
-  text-decoration: none;
-  color: #000;
-  font-weight: bold;
-  border-radius: 6px;
-  margin: 10px;
-  display: inline-block;
-}
+    /* Game Grid */
+    .games-title {
+        text-align: center;
+        font-size: 24px;
+        margin-top: 20px;
+        color: #36ff74;
+    }
+    .games {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        padding: 15px;
+    }
+    .game {
+        background: #1a1f26;
+        padding: 10px;
+        border-radius: 10px;
+        text-align: center;
+        border: 1px solid #2b323c;
+    }
+    .game img {
+        width: 100%;
+        border-radius: 6px;
+    }
+    .game-title {
+        margin-top: 8px;
+        font-size: 14px;
+    }
 
-.section {
-  text-align: center;
-  padding: 25px;
-}
-
-.card {
-  background: #161a2e;
-  padding: 16px;
-  margin: 14px auto;
-  width: 85%;
-  border-radius: 10px;
-  font-size: 18px;
-  border: 1px solid #00ff84;
-}
+    /* Footer */
+    .footer {
+        background: #101418;
+        padding: 15px;
+        text-align: center;
+        font-size: 14px;
+        margin-top: 20px;
+        color: #777;
+    }
 </style>
 
 </head>
-
 <body>
 
-<div class="header">SB77 • Online Gaming</div>
-
-<div class="btn-box">
-  <a class="btn" href="#">Login</a>
-  <a class="btn" href="#">Register</a>
+<!-- Header -->
+<div class="header">
+    <div class="logo">SB77</div>
+    <div class="menu">
+        <a href="#">Home</a>
+        <a href="#">Games</a>
+        <a href="#">Login</a>
+        <a href="#">Register</a>
+    </div>
 </div>
 
-<div class="section">
-  <h2>Our Games</h2>
-
-  <div class="card">🎰 Casino</div>
-  <div class="card">🏏 Sports Betting</div>
-  <div class="card">🎮 Slots</div>
-  <div class="card">🃏 Card Games</div>
+<!-- Banner -->
+<div class="banner">
+    Welcome to SB77 Gaming
 </div>
 
-</body>
-</html>
+<!-- Game Section -->
+<h2 class="games-title">Popular Games</h2>
+
+<div class="games">
+
+    <div class="game">
+        <img src="https://i.ibb.co/5xQ1tnK/aviator.jpg">
+        <div class="game-title">Aviator</div>
+    </div>
+
+    <div class="game">
+        <img src="https://i.ibb.co/Y2nwVpQ/crash.jpg">
+        <div class="game-title">Crash X</div>
+    </div>
+
+    <div class="game">
+        <img src="https://i.ibb.co/4T4C8kD/slots.jpg">
+        <div class="game-title">Slots</div>
+    </div>
+
+    <div class="game">
+        <img src="https://i.ibb.co/MZg5JhV/sports.jpg">
+        <div class="game-title">Sports</div>
+    </div>
+
+</div>
+
+<!-- Footer -->
+<div class="footer">
+    © 2025 SB77 Gaming — All Rights Reserved.
+</div>
+
+</body
