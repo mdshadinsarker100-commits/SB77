@@ -3,73 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SB77 • Online Gaming</title>
+    <title>SB77</title>
+
     <style>
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background: #0d0d0d;
-            color: white;
+            background: #0a0a0a;
+            color: #fff;
         }
-        header {
+
+        /* Header Top Social */
+        .top-bar {
             background: #111;
-            padding: 15px;
-            text-align: center;
-            font-size: 22px;
+            padding: 8px 15px;
+            display: flex;
+            justify-content: flex-end;
+            gap: 15px;
+        }
+
+        .top-bar img {
+            width: 22px;
+            height: 22px;
+        }
+
+        /* Main Header */
+        .header {
+            background: #001d39;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 28px;
             font-weight: bold;
-            color: #00eaff;
+            color: #00a2ff;
         }
-        .banner {
-            width: 100%;
+
+        .menu {
+            display: flex;
+            gap: 20px;
+            font-size: 18px;
         }
-        .games {
-            padding: 10px;
+
+        .menu a {
+            text-decoration: none;
+            color: #fff;
         }
-        .game-box {
-            background: #1a1a1a;
-            padding: 15px;
-            margin: 10px 0;
-            border-radius: 10px;
-            border: 1px solid #333;
+
+        .buttons {
+            display: flex;
+            gap: 10px;
         }
-        .game-box button {
-            background: #00eaff;
-            color: black;
-            padding: 10px 15px;
-            border: none;
+
+        .btn {
+            padding: 8px 15px;
             border-radius: 5px;
-            margin-top: 10px;
             font-weight: bold;
+            cursor: pointer;
+            border: none;
+        }
+
+        .login {
+            background: #ffaa00;
+        }
+
+        .register {
+            background: #ff3d3d;
+            color: #fff;
         }
     </style>
 </head>
+
 <body>
 
-<header>
-    SB77 • Official Gaming Platform
-</header>
-
-<img class="banner" src="https://i.ibb.co/9qf1T0h/casino-banner.jpg" alt="banner">
-
-<div class="games">
-    <div class="game-box">
-        <h3>🎰 Casino Games</h3>
-        <p>Play classic casino games like baccarat, roulette, and more.</p>
-        <button>Play Now</button>
+    <!-- Social Icons -->
+    <div class="top-bar">
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png"></a> <!-- FB -->
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png"></a> <!-- Telegram -->
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/124/124034.png"></a> <!-- WhatsApp -->
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"></a> <!-- Instagram -->
     </div>
 
-    <div class="game-box">
-        <h3>⚽ Sports Betting</h3>
-        <p>Bet on live matches — football, cricket, tennis & more!</p>
-        <button>Bet Now</button>
-    </div>
+    <!-- Main Header -->
+    <div class="header">
+        <div class="logo">SB77</div>
 
-    <div class="game-box">
-        <h3>🎮 Slots</h3>
-        <p>Spin and win big jackpots instantly!</p>
-        <button>Start Spin</button>
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="#">Sports</a>
+            <a href="#">Casino</a>
+            <a href="#">Live</a>
+            <a href="#">Slots</a>
+            <a href="#">Contact</a>
+        </div>
+
+        <div class="buttons">
+            <button class="btn login">Login</button>
+            <button class="btn register">Register</button>
+        </div>
     </div>
-</div>
 
 </body>
 </html>
