@@ -1,66 +1,38 @@
-body {
-    background: #000;
-    color: #fff;
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
+:root{
+  --bg:#0b0f1a; --card:#141a2b; --accent:#00e676; --muted:#9aa4b2;
 }
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:#fff}
 
 /* Header */
-.header {
-    background: #0a0a0a;
-    padding: 15px;
-    text-align: center;
-    border-bottom: 2px solid #00a2ff;
-}
+.header{display:flex;align-items:center;justify-content:space-between;padding:12px;background:linear-gradient(90deg,#0d1324,#0f1626)}
+.logo{font-weight:800;color:var(--accent);font-size:20px}
+.nav a{color:#cfeee0;margin:0 10px;text-decoration:none}
+.hdr-actions .btn-green{background:var(--accent);color:#07101a;padding:8px 12px;border-radius:8px;text-decoration:none;font-weight:700}
 
-.logo {
-    width: 150px;
-}
+/* Banner */
+.banner{position:relative;padding:12px}
+.banner-img{width:100%;border-radius:12px;display:block}
+.banner-text{position:relative;margin-top:12px;text-align:center}
+.banner-text h1{margin:0;font-size:22px;color:var(--accent)}
 
-/* Games Section */
-.games-section {
-    padding: 20px;
-    text-align: center;
-}
+/* Quick buttons */
+.quick{display:flex;gap:10px;padding:12px}
+.action{flex:1;padding:12px;border-radius:10px;text-align:center;text-decoration:none;font-weight:700}
+.btn-green{background:var(--accent);color:#07101a}
+.btn-blue{background:#1f6feb;color:#fff}
 
-.games-title {
-    font-size: 28px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: #00a2ff;
-}
-
-.game-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-}
-
-.game-card {
-    background: #111;
-    border-radius: 10px;
-    padding: 10px;
-    text-align: center;
-    border: 1px solid #222;
-}
-
-.game-card img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-.game-name {
-    margin-top: 10px;
-    font-size: 18px;
-    font-weight: bold;
-}
+/* Section / grid */
+.section{padding:12px}
+.section-title{color:var(--accent);margin:6px 0 12px;font-size:18px}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.card{background:var(--card);padding:8px;border-radius:10px;text-align:center;border:1px solid rgba(255,255,255,0.02)}
+.card img{width:100%;border-radius:8px}
+.card-title{margin-top:8px;font-weight:700;color:#fff}
 
 /* Footer */
-.footer {
-    text-align: center;
-    padding: 20px;
-    font-size: 14px;
-    color: #777;
-    margin-top: 20px;
-}
+.footer{background:#09101a;padding:18px;margin-top:20px;color:var(--muted)}
+.footer-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.footer a{color:#bbb;text-decoration:none}
+.payments img{width:48px;margin-right:8px}
+copyright{text-align:center;margin-top:12px}
