@@ -11,7 +11,7 @@ body {
   text-align: center;
 }
 .logo {
-  width: 120px;
+  width: 140px;
 }
 
 .banner-img {
@@ -19,11 +19,17 @@ body {
   border-bottom: 3px solid #222;
 }
 
+.welcome-img {
+  width: 100%;
+  margin-top: 10px;
+  border-bottom: 3px solid #222;
+}
+
 .games-section {
   padding: 15px;
 }
 .games-title {
-  font-size: 24px;
+  font-size: 26px;
   margin-bottom: 15px;
   color: #00a2ff;
 }
@@ -47,6 +53,7 @@ body {
 }
 .game-card p {
   margin-top: 5px;
+  font-size: 18px;
 }
 
 .payment {
@@ -54,12 +61,15 @@ body {
   text-align: center;
 }
 .payment-flex img {
-  width: 100px;
+  width: 110px;
   margin: 10px;
+  background: #fff;
+  padding: 8px;
+  border-radius: 12px;
 }
 .payment-number {
   margin-top: 10px;
-  font-size: 20px;
+  font-size: 22px;
   color: #00e676;
   font-weight: bold;
 }
@@ -74,4 +84,5 @@ body {
   padding: 12px;
   background: #161b22;
   text-align: center;
+  color: #aaa;
 }
